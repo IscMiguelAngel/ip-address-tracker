@@ -69,21 +69,20 @@ main {
         z-index: 9;
         .info-section {
             margin-bottom: 10px;
-            label, p {
+            p {
                 display: block;
                 text-align: center;
                 font-family: 'Outfit', sans-serif;
                 font-weight: 700;
-            }
-            label {
-                font-size: 0.7rem;
-                color: hsl(0, 0%, 59%);
-                letter-spacing: 2px;
-                margin-bottom: 3px;
-            }
-            p {
                 font-size: 1rem;
                 color: hsl(0, 0%, 17%);
+
+                small {
+                    font-size: 0.7rem;
+                    color: hsl(0, 0%, 59%);
+                    letter-spacing: 2px;
+                    margin-bottom: 3px;
+                }
             }
         }
     }
@@ -142,11 +141,11 @@ main {
                 width: 250px;
                 margin: 0;
                 padding: 0 15px;
-                label {
-                    font-size: 1rem;
-                }
                 p {
                     font-size: 1.3rem;
+                    small {
+                        font-size: 1rem;
+                    }
                 }
             }
             .info-section.address, .info-section.location, .info-section.timezone {
