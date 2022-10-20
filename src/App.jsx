@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import bg_header from "./assets/pattern-bg.png"
 import Header from './components/header'
 import Main from './components/main'

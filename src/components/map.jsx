@@ -1,10 +1,6 @@
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import { useCallback, useState } from 'react';
-
-const containerStyle = {
-    width: '100%',
-    height: '100%'
-};
+import icon_marker from "../assets/icon-location.svg"
 
 const Map = ({ lat, lng }) => {
     let center = {
@@ -26,7 +22,6 @@ const Map = ({ lat, lng }) => {
     }, [])
 
     const onUnmount = useCallback(function callback(map) {
-        console.log(map)
         setMap(null)
     }, [])
 
@@ -34,8 +29,24 @@ const Map = ({ lat, lng }) => {
         <div id="map">
             {
                 isLoaded ? (
-                    <GoogleMap mapContainersStyle={ containerStyle } center={ center } markers={ center } zoom={ 15 } onLoad={ onLoad } onUnmount={ onUnmount }>
-                        <Marker position={ center } />
+                    <GoogleMap
+                        center={ center }
+                        markers={ center }
+                        zoom={ 13 }
+                        onLoad={ onLoad }
+                        onUnmount={ onUnmount }
+                        mapContainerStyle={{
+                            width: "100%",
+                            height: "100%"
+                        }}
+                        options={{
+                            zoomControl: false,
+                            streetViewControl: false,
+                            mapTypeControl: false,
+                            fullscreenControl: false
+                        }}
+                        >
+                        <Marker position={ center } icon={ icon_marker } />
                         { /* Child components, such as markers, info windows, etc. */ }
                         <></>
                     </GoogleMap>
