@@ -30,7 +30,6 @@ function App() {
   }
 
   const submitForm = (e) => {
-    // https://geo.ipify.org/api/v2/country,city?apiKey=at_VT0iShWlkGtdAuRMKikwUYHHbuANH&ipAddress=8.8.8.8
     const api_key = import.meta.env.VITE_IPIFY_API_KEY
     const ip = document.getElementById("ip-address").value
     const pattern = /^((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])$/
