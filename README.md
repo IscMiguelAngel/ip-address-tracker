@@ -26,7 +26,7 @@ Los usuarios deben ser capces de:
 
   
 
-![](./screenshot.PNG)
+![](./screenshot.png)
 
   
 
