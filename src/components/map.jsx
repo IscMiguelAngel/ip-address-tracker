@@ -32,7 +32,7 @@ const Map = ({ lat, lng }) => {
                     <GoogleMap
                         center={ center }
                         markers={ center }
-                        zoom={ 13 }
+                        zoom={ 10 }
                         onLoad={ onLoad }
                         onUnmount={ onUnmount }
                         mapContainerStyle={{
