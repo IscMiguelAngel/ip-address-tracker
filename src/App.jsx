@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import bg_header from "./assets/pattern-bg.png"
+import Alert from './components/alert'
 import Header from './components/header'
 import Main from './components/main'
 
 function App() {  
   
+  const [alert, setAlert] = useState({ isShow: false, text: "Text default for test", type: "info" })
   const [info, setInfo] = useState({
       ip_address: "",
       location: "",
@@ -22,8 +24,6 @@ function App() {
         timezone: data.location.timezone,
         isp: data.isp
       })
-
-      console.log(info)
     }).catch(err => {
       console.log(err)
     })
@@ -38,15 +38,23 @@ function App() {
     if(ip !== "" && pattern.test(ip)) {
       geoIpify(api_key, ip)
     } else
-        alert("Por favor ingresa una IP válida")
+        handleAlert("info", "Por favor ingresa una IP válida")
 
     e.preventDefault()
+  }
+
+  const handleAlert = (type = "", text = "") => {
+    setAlert({ isShow: true, text: text, type: type })
+    setTimeout(() => {
+      setAlert({ ...alert, isShow: false })
+    }, 4000)
   }
 
   return (
     <>
       <Header background={ bg_header } title="IP Address Tracker" submitForm={ submitForm } />
       <Main info={ info } />
+      <Alert isShow={ alert.isShow } text={ alert.text } type={ alert.type } />
     </>
   )
 }

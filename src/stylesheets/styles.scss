@@ -59,7 +59,7 @@ main {
         width: 90%;
         max-width: 600px;
         display: block;
-        margin: -120px auto 0 auto;
+        margin: -100px auto 0 auto;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 15px 50px rgba(30, 30, 30, 0.5);
@@ -90,6 +90,42 @@ main {
     #map {
         height: calc(100vh - 250px);
     }
+}
+
+.alert {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: hsl(0, 0%, 59%);
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgb(30 30 30 / 50%);
+    z-index: 999999;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    .alert-header {
+        width: 50px;
+        height: 50px;
+        img {
+            width: 100%;
+        }
+    }
+    .alert-body {
+        width: calc(100% - 50px);
+        padding: 10px;
+        p {
+            color: #000;
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+    }
+}
+
+.alert.show {
+    display: flex;
 }
 
 @media screen and (min-width: 991px) {
