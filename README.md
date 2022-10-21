@@ -1,15 +1,9 @@
-# Frontend Mentor - IP address tracker solution
-
-  
+# Frontend Mentor - Solución "IP address tracker"
 
 Esta es una solución al desafío [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Los desafíos de Frontend Mentor lo ayudan a mejorar sus habilidades de codificación mediante proyectos realistas.
 
-  
-
 ## Visión General
-### El reto
-
-  
+### El reto  
 
 Los usuarios deben ser capces de:
 - Ver el diseño óptimo para cada página según el tamaño de pantalla de su dispositivo
@@ -19,24 +13,16 @@ Los usuarios deben ser capces de:
 - Ver su propia dirección IP en el mapa en la carga de la página inicial
 
 - Busque cualquier dirección IP o dominio y vea la información clave y la ubicación
-
   
-
 ### Screenshot
 
-  
-
 ![](./screenshot.png)
-
-  
 
 ### Links
 
 - URL del proyecto: [https://github.com/IscMiguelAngel/ip-address-tracker](https://github.com/IscMiguelAngel/ip-address-tracker)
 
 - URL del sitio en vivo: [https://ip-address-tracker-ten-nu.vercel.app/](https://ip-address-tracker-ten-nu.vercel.app/)
-
-  
 
 ## Mi proceso
 ### Construído con
@@ -48,7 +34,7 @@ Los usuarios deben ser capces de:
 - [React Google Maps API](https://www.npmjs.com/package/@react-google-maps/api) - Componente para utilizar Google Maps
  
 
-## Author
+## Autor
 
 - Linkedin- [Isc Miguel Angel](https://www.linkedin.com/in/isc-miguel-angel)
 - Git Hub- [IscMiguelAngel](https://github.com/IscMiguelAngel)
